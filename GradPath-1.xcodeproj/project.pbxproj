@@ -3,19 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40FDB6CB3A149C1043F3495 /* Pods_GradPath_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB562576B43513A0FB81C32 /* Pods_GradPath_1.framework */; };
 		AF016D47253D03EE00A126E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF016D46253D03EE00A126E4 /* AppDelegate.swift */; };
 		AF016D49253D03EE00A126E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF016D48253D03EE00A126E4 /* SceneDelegate.swift */; };
 		AF016D4B253D03EE00A126E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF016D4A253D03EE00A126E4 /* ViewController.swift */; };
 		AF016D4E253D03EE00A126E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF016D4C253D03EE00A126E4 /* Main.storyboard */; };
 		AF016D50253D03F100A126E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF016D4F253D03F100A126E4 /* Assets.xcassets */; };
 		AF016D53253D03F100A126E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF016D51253D03F100A126E4 /* LaunchScreen.storyboard */; };
+		AF48CFF0254D306800544EF8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48CFEF254D306800544EF8 /* LoginViewController.swift */; };
+		AF48CFF4254D322F00544EF8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48CFF3254D322F00544EF8 /* SignupViewController.swift */; };
+		AF48CFF8254D357C00544EF8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48CFF7254D357C00544EF8 /* User.swift */; };
+		AF686BB52550AF9200F01C93 /* GradPath_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF686BB42550AF9200F01C93 /* GradPath_1Tests.swift */; };
+		AF686BC72551097B00F01C93 /* KeywordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF686BC62551097B00F01C93 /* KeywordViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AF686BB72550AF9200F01C93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF016D3B253D03EE00A126E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF016D42253D03EE00A126E4;
+			remoteInfo = "GradPath-1";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8CB562576B43513A0FB81C32 /* Pods_GradPath_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GradPath_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF016D43253D03EE00A126E4 /* GradPath-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GradPath-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF016D46253D03EE00A126E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF016D48253D03EE00A126E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,10 +41,27 @@
 		AF016D4F253D03F100A126E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF016D52253D03F100A126E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF016D54253D03F100A126E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF48CFEF254D306800544EF8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AF48CFF3254D322F00544EF8 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		AF48CFF7254D357C00544EF8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF686BB22550AF9200F01C93 /* GradPath-1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GradPath-1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF686BB42550AF9200F01C93 /* GradPath_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradPath_1Tests.swift; sourceTree = "<group>"; };
+		AF686BB62550AF9200F01C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF686BC62551097B00F01C93 /* KeywordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordViewController.swift; sourceTree = "<group>"; };
+		CAC8FFC1CE2B18EEA4522045 /* Pods-GradPath-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradPath-1.release.xcconfig"; path = "Target Support Files/Pods-GradPath-1/Pods-GradPath-1.release.xcconfig"; sourceTree = "<group>"; };
+		D67175C6031C878E4B6DD5AE /* Pods-GradPath-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradPath-1.debug.xcconfig"; path = "Target Support Files/Pods-GradPath-1/Pods-GradPath-1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AF016D40253D03EE00A126E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A40FDB6CB3A149C1043F3495 /* Pods_GradPath_1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF686BAF2550AF9200F01C93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,11 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03EA0962D3FB6F72CE875FDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D67175C6031C878E4B6DD5AE /* Pods-GradPath-1.debug.xcconfig */,
+				CAC8FFC1CE2B18EEA4522045 /* Pods-GradPath-1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78526A06C1C914155AC5FADC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CB562576B43513A0FB81C32 /* Pods_GradPath_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF016D3A253D03EE00A126E4 = {
 			isa = PBXGroup;
 			children = (
 				AF016D45253D03EE00A126E4 /* GradPath-1 */,
+				AF686BB32550AF9200F01C93 /* GradPath-1Tests */,
 				AF016D44253D03EE00A126E4 /* Products */,
+				03EA0962D3FB6F72CE875FDE /* Pods */,
+				78526A06C1C914155AC5FADC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				AF016D43253D03EE00A126E4 /* GradPath-1.app */,
+				AF686BB22550AF9200F01C93 /* GradPath-1Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +114,25 @@
 				AF016D46253D03EE00A126E4 /* AppDelegate.swift */,
 				AF016D48253D03EE00A126E4 /* SceneDelegate.swift */,
 				AF016D4A253D03EE00A126E4 /* ViewController.swift */,
+				AF48CFF3254D322F00544EF8 /* SignupViewController.swift */,
+				AF48CFEF254D306800544EF8 /* LoginViewController.swift */,
+				AF686BC62551097B00F01C93 /* KeywordViewController.swift */,
 				AF016D4C253D03EE00A126E4 /* Main.storyboard */,
 				AF016D4F253D03F100A126E4 /* Assets.xcassets */,
 				AF016D51253D03F100A126E4 /* LaunchScreen.storyboard */,
 				AF016D54253D03F100A126E4 /* Info.plist */,
+				AF48CFF7254D357C00544EF8 /* User.swift */,
 			);
 			path = "GradPath-1";
+			sourceTree = "<group>";
+		};
+		AF686BB32550AF9200F01C93 /* GradPath-1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AF686BB42550AF9200F01C93 /* GradPath_1Tests.swift */,
+				AF686BB62550AF9200F01C93 /* Info.plist */,
+			);
+			path = "GradPath-1Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF016D57253D03F100A126E4 /* Build configuration list for PBXNativeTarget "GradPath-1" */;
 			buildPhases = (
+				D6B5F34B858DC5294320C817 /* [CP] Check Pods Manifest.lock */,
 				AF016D3F253D03EE00A126E4 /* Sources */,
 				AF016D40253D03EE00A126E4 /* Frameworks */,
 				AF016D41253D03EE00A126E4 /* Resources */,
+				1CCD0DFCC4AD65D292FDD28B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,6 +156,24 @@
 			productName = "GradPath-1";
 			productReference = AF016D43253D03EE00A126E4 /* GradPath-1.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AF686BB12550AF9200F01C93 /* GradPath-1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF686BB92550AF9200F01C93 /* Build configuration list for PBXNativeTarget "GradPath-1Tests" */;
+			buildPhases = (
+				AF686BAE2550AF9200F01C93 /* Sources */,
+				AF686BAF2550AF9200F01C93 /* Frameworks */,
+				AF686BB02550AF9200F01C93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF686BB82550AF9200F01C93 /* PBXTargetDependency */,
+			);
+			name = "GradPath-1Tests";
+			productName = "GradPath-1Tests";
+			productReference = AF686BB22550AF9200F01C93 /* GradPath-1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +186,10 @@
 				TargetAttributes = {
 					AF016D42253D03EE00A126E4 = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					AF686BB12550AF9200F01C93 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = AF016D42253D03EE00A126E4;
 					};
 				};
 			};
@@ -115,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				AF016D42253D03EE00A126E4 /* GradPath-1 */,
+				AF686BB12550AF9200F01C93 /* GradPath-1Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,20 +223,89 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF686BB02550AF9200F01C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CCD0DFCC4AD65D292FDD28B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GradPath-1/Pods-GradPath-1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GradPath-1/Pods-GradPath-1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GradPath-1/Pods-GradPath-1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6B5F34B858DC5294320C817 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GradPath-1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF016D3F253D03EE00A126E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF48CFF0254D306800544EF8 /* LoginViewController.swift in Sources */,
+				AF686BC72551097B00F01C93 /* KeywordViewController.swift in Sources */,
 				AF016D4B253D03EE00A126E4 /* ViewController.swift in Sources */,
+				AF48CFF4254D322F00544EF8 /* SignupViewController.swift in Sources */,
 				AF016D47253D03EE00A126E4 /* AppDelegate.swift in Sources */,
 				AF016D49253D03EE00A126E4 /* SceneDelegate.swift in Sources */,
+				AF48CFF8254D357C00544EF8 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF686BAE2550AF9200F01C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF686BB52550AF9200F01C93 /* GradPath_1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF686BB82550AF9200F01C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF016D42253D03EE00A126E4 /* GradPath-1 */;
+			targetProxy = AF686BB72550AF9200F01C93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AF016D4C253D03EE00A126E4 /* Main.storyboard */ = {
@@ -283,6 +445,7 @@
 		};
 		AF016D58253D03F100A126E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67175C6031C878E4B6DD5AE /* Pods-GradPath-1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +464,7 @@
 		};
 		AF016D59253D03F100A126E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC8FFC1CE2B18EEA4522045 /* Pods-GradPath-1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +478,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF686BBA2550AF9200F01C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GradPath-1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "amrit-kaur.GradPath-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradPath-1.app/GradPath-1";
+			};
+			name = Debug;
+		};
+		AF686BBB2550AF9200F01C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GradPath-1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "amrit-kaur.GradPath-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradPath-1.app/GradPath-1";
 			};
 			name = Release;
 		};
@@ -334,6 +536,15 @@
 			buildConfigurations = (
 				AF016D58253D03F100A126E4 /* Debug */,
 				AF016D59253D03F100A126E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF686BB92550AF9200F01C93 /* Build configuration list for PBXNativeTarget "GradPath-1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF686BBA2550AF9200F01C93 /* Debug */,
+				AF686BBB2550AF9200F01C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

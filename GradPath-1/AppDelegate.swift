@@ -3,17 +3,29 @@
 //  GradPath-1
 //
 //  Created by Amrit Kalsi on 2020-10-18.
-//
+//  Intialise app launch and launch configurations
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //define realm migration configurations
+        
+        let config = Realm.Configuration(
+            schemaVersion: 2,
+            migrationBlock: { migration, oldSchemaVersion in
+                if (oldSchemaVersion < 2) {
+                    migration.renameProperty(onType: User.className(), from: "name", to: "email")
+                }
+            })
+
+        Realm.Configuration.defaultConfiguration = config
+        
         return true
     }
 

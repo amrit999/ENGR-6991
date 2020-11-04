@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="-341" y="118"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="kJ2-Np-nnv">
             <objects>
-                <viewController id="sCA-AZ-dh1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login_vc" id="sCA-AZ-dh1" customClass="LoginViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fzH-y6-Qm8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,16 +87,19 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-d2-f0e">
                                         <rect key="frame" x="14" y="0.0" width="100.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zl5-QG-mCe">
                                         <rect key="frame" x="0.0" y="70" width="128" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H96-pN-wUJ">
                                         <rect key="frame" x="41.5" y="140" width="45" height="30"/>
                                         <state key="normal" title="LOGIN"/>
+                                        <connections>
+                                            <action selector="login_confirm:" destination="sCA-AZ-dh1" eventType="touchUpInside" id="iAl-Nm-zfi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -108,15 +111,97 @@
                             <constraint firstItem="9sw-5d-5OD" firstAttribute="centerX" secondItem="fzH-y6-Qm8" secondAttribute="centerX" id="zTg-0z-KOe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="login_email" destination="qbb-d2-f0e" id="Pbr-dm-7ZW"/>
+                        <outlet property="login_password" destination="Zl5-QG-mCe" id="0Wp-7y-3Vk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMe-o0-lOK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="412" y="-222"/>
         </scene>
-        <!--View Controller-->
+        <!--Keyword View Controller-->
+        <scene sceneID="387-eW-UDq">
+            <objects>
+                <viewController storyboardIdentifier="Keyword_vc" id="B36-9X-Csc" customClass="KeywordViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yfH-nR-h4T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="111" translatesAutoresizingMaskIntoConstraints="NO" id="5qX-Ay-dfd">
+                                <rect key="frame" x="80.5" y="191.5" width="253.5" height="513"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-zK-Viz">
+                                        <rect key="frame" x="0.0" y="0.0" width="253.5" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Eig-0Z-IhO">
+                                        <rect key="frame" x="53.5" y="153" width="146" height="360"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y4-pv-eKd">
+                                                <rect key="frame" x="0.0" y="0.0" width="146" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Keyword_1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8C-XC-hYh">
+                                                <rect key="frame" x="0.0" y="78" width="146" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Keyword_2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U2-hT-6VO">
+                                                <rect key="frame" x="0.0" y="156" width="146" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Keyword_3">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-bl-Lyn">
+                                                <rect key="frame" x="0.0" y="234" width="146" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Keyword_4">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPp-Nm-bwQ">
+                                                <rect key="frame" x="0.0" y="312" width="146" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Keyword_5">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x6v-ZQ-vgp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5qX-Ay-dfd" firstAttribute="centerY" secondItem="yfH-nR-h4T" secondAttribute="centerY" id="12b-3P-7Ka"/>
+                            <constraint firstItem="5qX-Ay-dfd" firstAttribute="centerX" secondItem="yfH-nR-h4T" secondAttribute="centerX" id="BAK-Ve-EIh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svN-8O-Vst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211.5942028985507" y="58.928571428571423"/>
+        </scene>
+        <!--Signup View Controller-->
         <scene sceneID="adT-80-mSD">
             <objects>
-                <viewController id="qyx-VI-oXk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signup_vc" id="qyx-VI-oXk" customClass="SignupViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jef-sp-LVp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,21 +212,24 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-qW-Jng">
                                         <rect key="frame" x="22.5" y="0.0" width="100.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bWx-EQ-UA0">
                                         <rect key="frame" x="8.5" y="70" width="128" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffN-Fh-Ryh">
                                         <rect key="frame" x="0.0" y="140" width="145.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reh-ge-UR9">
                                         <rect key="frame" x="44.5" y="210" width="56" height="30"/>
                                         <state key="normal" title="SIGNUP"/>
+                                        <connections>
+                                            <action selector="signup_confirm:" destination="qyx-VI-oXk" eventType="touchUpInside" id="SV6-ZL-7M3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -153,6 +241,11 @@
                             <constraint firstItem="t57-g3-Avn" firstAttribute="centerY" secondItem="jef-sp-LVp" secondAttribute="centerY" id="u3P-Nc-zxT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="signup_confirm_password" destination="ffN-Fh-Ryh" id="eaS-6Q-joW"/>
+                        <outlet property="signup_email" destination="Hlh-qW-Jng" id="8pJ-sS-xAz"/>
+                        <outlet property="signup_password" destination="bWx-EQ-UA0" id="NtC-Tu-jwz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UsP-vm-Pxb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
