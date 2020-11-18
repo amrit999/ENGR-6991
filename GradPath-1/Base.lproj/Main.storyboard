@@ -120,66 +120,51 @@
             </objects>
             <point key="canvasLocation" x="412" y="-222"/>
         </scene>
-        <!--Keyword View Controller-->
+        <!--Level View Controller-->
         <scene sceneID="387-eW-UDq">
             <objects>
-                <viewController storyboardIdentifier="Keyword_vc" id="B36-9X-Csc" customClass="KeywordViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Level_vc" id="B36-9X-Csc" customClass="LevelViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yfH-nR-h4T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="111" translatesAutoresizingMaskIntoConstraints="NO" id="5qX-Ay-dfd">
-                                <rect key="frame" x="80.5" y="191.5" width="253.5" height="513"/>
+                                <rect key="frame" x="83.5" y="318.5" width="247" height="259"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-zK-Viz">
-                                        <rect key="frame" x="0.0" y="0.0" width="253.5" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-zK-Viz">
+                                        <rect key="frame" x="25.5" y="0.0" width="196" height="42"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Eig-0Z-IhO">
-                                        <rect key="frame" x="53.5" y="153" width="146" height="360"/>
+                                        <rect key="frame" x="0.0" y="153" width="247" height="106"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y4-pv-eKd">
-                                                <rect key="frame" x="0.0" y="0.0" width="146" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="247" height="38"/>
                                                 <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                                <state key="normal" title="Keyword_1">
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Graduate">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="graduate_tapped:" destination="B36-9X-Csc" eventType="touchUpInside" id="eKK-Fi-bwq"/>
+                                                    <segue destination="Dhd-aW-FLF" kind="show" id="nD2-Wf-KVB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8C-XC-hYh">
-                                                <rect key="frame" x="0.0" y="78" width="146" height="48"/>
+                                                <rect key="frame" x="0.0" y="68" width="247" height="38"/>
                                                 <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                                <state key="normal" title="Keyword_2">
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title=" Under-Graduate ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U2-hT-6VO">
-                                                <rect key="frame" x="0.0" y="156" width="146" height="48"/>
-                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                                <state key="normal" title="Keyword_3">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-bl-Lyn">
-                                                <rect key="frame" x="0.0" y="234" width="146" height="48"/>
-                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                                <state key="normal" title="Keyword_4">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPp-Nm-bwQ">
-                                                <rect key="frame" x="0.0" y="312" width="146" height="48"/>
-                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                                <state key="normal" title="Keyword_5">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
+                                                <connections>
+                                                    <action selector="undergrad_tapped:" destination="B36-9X-Csc" eventType="touchUpInside" id="B6q-QJ-67D"/>
+                                                    <segue destination="Dhd-aW-FLF" kind="show" id="GlE-l0-WPi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -197,6 +182,237 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svN-8O-Vst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1211.5942028985507" y="58.928571428571423"/>
+        </scene>
+        <!--Keyword View Controller-->
+        <scene sceneID="oBm-Mt-d64">
+            <objects>
+                <viewController storyboardIdentifier="Keyword_vc" id="Dhd-aW-FLF" customClass="KeywordViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V2p-jQ-jAt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="D8p-kV-u7e">
+                                <rect key="frame" x="80.5" y="161" width="253.5" height="520"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYW-cB-iAa">
+                                        <rect key="frame" x="0.0" y="0.0" width="253.5" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="uZG-MT-wGV">
+                                        <rect key="frame" x="26" y="128" width="201" height="392"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-co-Vtg">
+                                                <rect key="frame" x="0.0" y="0.0" width="201" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Computer">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="key_1_tapped:" destination="Dhd-aW-FLF" eventType="touchUpInside" id="r2I-05-Qo1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O9-Yv-hDF">
+                                                <rect key="frame" x="0.0" y="86" width="201" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Civil">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="key_2_tapped:" destination="Dhd-aW-FLF" eventType="touchUpInside" id="Kfq-BB-TZj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wE3-jT-7uJ">
+                                                <rect key="frame" x="0.0" y="172" width="201" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Electrical">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="key_3_tapped:" destination="Dhd-aW-FLF" eventType="touchUpInside" id="IE2-Ic-66N"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAR-FY-uou">
+                                                <rect key="frame" x="0.0" y="258" width="201" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Software">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="key_4_tapped:" destination="Dhd-aW-FLF" eventType="touchUpInside" id="9fy-4I-vyj"/>
+                                                    <segue destination="ddY-Mt-kky" kind="popoverPresentation" popoverAnchorView="xAR-FY-uou" id="S6p-kd-2pk">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LU-Qb-C5l">
+                                                <rect key="frame" x="0.0" y="344" width="201" height="48"/>
+                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title=" Environmental ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="key_5_tapped:" destination="Dhd-aW-FLF" eventType="touchUpInside" id="MxJ-AE-hV1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eS3-hD-O0y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D8p-kV-u7e" firstAttribute="centerX" secondItem="V2p-jQ-jAt" secondAttribute="centerX" id="ffG-kj-d7S"/>
+                            <constraint firstItem="D8p-kV-u7e" firstAttribute="centerY" secondItem="V2p-jQ-jAt" secondAttribute="centerY" id="vRP-tk-47h"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaB-VG-Qkx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2121.739130434783" y="58.928571428571423"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="D7B-Yh-KuY">
+            <objects>
+                <tableViewController id="Tr2-8O-6jJ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hI9-XL-x70">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseTableViewCell" rowHeight="100" id="iXS-Nq-UDa" customClass="CourseTableViewCell" customModule="GradPath_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iXS-Nq-UDa" id="TLa-rj-4Dm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LhP-nV-BC8" customClass="CourseList" customModule="GradPath_1" customModuleProvider="target">
+                                            <rect key="frame" x="35" y="11" width="240.5" height="64.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concordia University " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb0-Pc-ruj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240.5" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M.Eng - Software Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lne-dI-aJR">
+                                                    <rect key="frame" x="0.0" y="43" width="240.5" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                                    <color key="textColor" systemColor="systemPurpleColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xW-40-P7V">
+                                            <rect key="frame" x="332" y="33" width="47" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <state key="normal" title="Save"/>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="course_name" destination="lne-dI-aJR" id="2GX-7l-Xqx"/>
+                                    <outlet property="university_name" destination="cb0-Pc-ruj" id="Uzc-EG-hlz"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tr2-8O-6jJ" id="YJR-IC-Jxx"/>
+                            <outlet property="delegate" destination="Tr2-8O-6jJ" id="9pQ-jW-A1A"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="FnQ-08-gy6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvD-75-ELf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2910.144927536232" y="68.973214285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="daj-Ur-w9L">
+            <objects>
+                <viewController id="ddY-Mt-kky" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJ1-8G-yzX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="M.ENG - Software Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BT-BQ-xct">
+                                <rect key="frame" x="33" y="143" width="259" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVw-EV-omX">
+                                <rect key="frame" x="321" y="109" width="41" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONCORDIA UNIVERSITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZl-Lg-dk8">
+                                <rect key="frame" x="33" y="95" width="248" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="M.ENG - Software Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QA-Ik-wMF">
+                                <rect key="frame" x="33" y="468" width="259" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCW-7W-GRX">
+                                <rect key="frame" x="321" y="434" width="41" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ETS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zj-Rk-fei">
+                                <rect key="frame" x="33" y="420" width="35" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="M.Sc - Computer Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEM-d9-V47">
+                                <rect key="frame" x="33" y="314" width="218" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7U-ku-hxu">
+                                <rect key="frame" x="321" y="280" width="41" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="McGill UNIVERSITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnd-WR-IZ7">
+                                <rect key="frame" x="33" y="266" width="248" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Wx-al-YG2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24B-Mg-Ipd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3613.04347826087" y="118.52678571428571"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="adT-80-mSD">
@@ -252,9 +468,15 @@
             <point key="canvasLocation" x="412" y="428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GlE-l0-WPi"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

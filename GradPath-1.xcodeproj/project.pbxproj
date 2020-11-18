@@ -14,11 +14,15 @@
 		AF016D4E253D03EE00A126E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF016D4C253D03EE00A126E4 /* Main.storyboard */; };
 		AF016D50253D03F100A126E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF016D4F253D03F100A126E4 /* Assets.xcassets */; };
 		AF016D53253D03F100A126E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF016D51253D03F100A126E4 /* LaunchScreen.storyboard */; };
+		AF0F71182560716600DDDD4A /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0F71172560716600DDDD4A /* LevelViewController.swift */; };
 		AF48CFF0254D306800544EF8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48CFEF254D306800544EF8 /* LoginViewController.swift */; };
 		AF48CFF4254D322F00544EF8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48CFF3254D322F00544EF8 /* SignupViewController.swift */; };
 		AF48CFF8254D357C00544EF8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48CFF7254D357C00544EF8 /* User.swift */; };
+		AF5241D02563AB1900D65CA6 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5241CF2563AB1900D65CA6 /* CourseTableViewCell.swift */; };
 		AF686BB52550AF9200F01C93 /* GradPath_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF686BB42550AF9200F01C93 /* GradPath_1Tests.swift */; };
 		AF686BC72551097B00F01C93 /* KeywordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF686BC62551097B00F01C93 /* KeywordViewController.swift */; };
+		AFD056B22564920200AF4058 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD056B12564920200AF4058 /* CourseList.swift */; };
+		AFD056B625649D9300AF4058 /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD056B525649D9300AF4058 /* CourseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +45,17 @@
 		AF016D4F253D03F100A126E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF016D52253D03F100A126E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF016D54253D03F100A126E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0F71172560716600DDDD4A /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		AF48CFEF254D306800544EF8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AF48CFF3254D322F00544EF8 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		AF48CFF7254D357C00544EF8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF5241CF2563AB1900D65CA6 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		AF686BB22550AF9200F01C93 /* GradPath-1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GradPath-1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF686BB42550AF9200F01C93 /* GradPath_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradPath_1Tests.swift; sourceTree = "<group>"; };
 		AF686BB62550AF9200F01C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF686BC62551097B00F01C93 /* KeywordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordViewController.swift; sourceTree = "<group>"; };
+		AFD056B12564920200AF4058 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		AFD056B525649D9300AF4058 /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
 		CAC8FFC1CE2B18EEA4522045 /* Pods-GradPath-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradPath-1.release.xcconfig"; path = "Target Support Files/Pods-GradPath-1/Pods-GradPath-1.release.xcconfig"; sourceTree = "<group>"; };
 		D67175C6031C878E4B6DD5AE /* Pods-GradPath-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradPath-1.debug.xcconfig"; path = "Target Support Files/Pods-GradPath-1/Pods-GradPath-1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,19 +119,31 @@
 		AF016D45253D03EE00A126E4 /* GradPath-1 */ = {
 			isa = PBXGroup;
 			children = (
+				AF5241B72563749000D65CA6 /* ViewControllers */,
 				AF016D46253D03EE00A126E4 /* AppDelegate.swift */,
 				AF016D48253D03EE00A126E4 /* SceneDelegate.swift */,
-				AF016D4A253D03EE00A126E4 /* ViewController.swift */,
-				AF48CFF3254D322F00544EF8 /* SignupViewController.swift */,
-				AF48CFEF254D306800544EF8 /* LoginViewController.swift */,
-				AF686BC62551097B00F01C93 /* KeywordViewController.swift */,
 				AF016D4C253D03EE00A126E4 /* Main.storyboard */,
 				AF016D4F253D03F100A126E4 /* Assets.xcassets */,
 				AF016D51253D03F100A126E4 /* LaunchScreen.storyboard */,
 				AF016D54253D03F100A126E4 /* Info.plist */,
 				AF48CFF7254D357C00544EF8 /* User.swift */,
+				AFD056B12564920200AF4058 /* CourseList.swift */,
+				AF5241CF2563AB1900D65CA6 /* CourseTableViewCell.swift */,
 			);
 			path = "GradPath-1";
+			sourceTree = "<group>";
+		};
+		AF5241B72563749000D65CA6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF016D4A253D03EE00A126E4 /* ViewController.swift */,
+				AF48CFF3254D322F00544EF8 /* SignupViewController.swift */,
+				AF48CFEF254D306800544EF8 /* LoginViewController.swift */,
+				AF0F71172560716600DDDD4A /* LevelViewController.swift */,
+				AF686BC62551097B00F01C93 /* KeywordViewController.swift */,
+				AFD056B525649D9300AF4058 /* CourseTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		AF686BB32550AF9200F01C93 /* GradPath-1Tests */ = {
@@ -279,10 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD056B625649D9300AF4058 /* CourseTableViewController.swift in Sources */,
 				AF48CFF0254D306800544EF8 /* LoginViewController.swift in Sources */,
 				AF686BC72551097B00F01C93 /* KeywordViewController.swift in Sources */,
 				AF016D4B253D03EE00A126E4 /* ViewController.swift in Sources */,
+				AF0F71182560716600DDDD4A /* LevelViewController.swift in Sources */,
 				AF48CFF4254D322F00544EF8 /* SignupViewController.swift in Sources */,
+				AF5241D02563AB1900D65CA6 /* CourseTableViewCell.swift in Sources */,
+				AFD056B22564920200AF4058 /* CourseList.swift in Sources */,
 				AF016D47253D03EE00A126E4 /* AppDelegate.swift in Sources */,
 				AF016D49253D03EE00A126E4 /* SceneDelegate.swift in Sources */,
 				AF48CFF8254D357C00544EF8 /* User.swift in Sources */,
