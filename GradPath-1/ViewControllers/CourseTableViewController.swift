@@ -10,18 +10,10 @@ import UIKit
 class CourseTableViewController: UITableViewController {
     //MARK: Properties
      
-    var courses:Array? = []
-
-    private func viewCourses() {
-        
-        
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        viewCourses()
+    
     }
 
     // MARK: - Table view data source
@@ -48,10 +40,9 @@ class CourseTableViewController: UITableViewController {
            }
            
            // Fetches the appropriate course for the data source layout.
-        let course = courses?[indexPath.row]
         
-        cell.university_name.text = ""
-        cell.course_name.text = ""
+        cell.university_name.text = "Concordia University"
+        cell.course_name.text = "M.Eng Software Engineering"
            
         return cell
     }

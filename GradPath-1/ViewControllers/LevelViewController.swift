@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 var user_input:String = ""
 class LevelViewController: UIViewController {
 
