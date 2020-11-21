@@ -7,13 +7,21 @@
 
 import UIKit
 
+var myArray = [[String]]()
 class CourseTableViewController: UITableViewController {
     //MARK: Properties
      
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        let path = Bundle.main.path(forResource: "data", ofType: "txt")
+        let url = URL(fileURLWithPath: path!)
+        let contentString = try! NSString(contentsOf: url, encoding: String.Encoding.utf8.rawValue)
+        var csvRows: [String] = contentString.components(separatedBy: "\n")
+
+        for row in csvRows {
+            var csvColumns: [String] = row.components(separatedBy: ",")
+            myArray.append(csvColumns)
+        }
     }
 
     // MARK: - Table view data source
@@ -40,10 +48,11 @@ class CourseTableViewController: UITableViewController {
            }
            
            // Fetches the appropriate course for the data source layout.
+        let out = myArray[indexPath.row]
         
-        cell.university_name.text = "Concordia University"
-        cell.course_name.text = "M.Eng Software Engineering"
-           
+        cell.university_name.text = out[1]
+        cell.course_name.text = out[level_input+1]
+    
         return cell
     }
     

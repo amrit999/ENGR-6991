@@ -212,6 +212,9 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="key_1_tapped:" destination="Dhd-aW-FLF" eventType="touchUpInside" id="r2I-05-Qo1"/>
+                                                    <segue destination="Tr2-8O-6jJ" kind="popoverPresentation" popoverAnchorView="tR8-co-Vtg" id="sdd-eE-6Ns">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O9-Yv-hDF">
@@ -223,6 +226,9 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="key_2_tapped:" destination="Dhd-aW-FLF" eventType="touchUpInside" id="Kfq-BB-TZj"/>
+                                                    <segue destination="Tr2-8O-6jJ" kind="popoverPresentation" popoverAnchorView="6O9-Yv-hDF" id="6OS-K0-dNw">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wE3-jT-7uJ">
@@ -234,6 +240,9 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="key_3_tapped:" destination="Dhd-aW-FLF" eventType="touchUpInside" id="IE2-Ic-66N"/>
+                                                    <segue destination="Tr2-8O-6jJ" kind="popoverPresentation" popoverAnchorView="wE3-jT-7uJ" id="5bG-Wd-NHq">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAR-FY-uou">
@@ -260,6 +269,9 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="key_5_tapped:" destination="Dhd-aW-FLF" eventType="touchUpInside" id="MxJ-AE-hV1"/>
+                                                    <segue destination="Tr2-8O-6jJ" kind="popoverPresentation" popoverAnchorView="0LU-Qb-C5l" id="dOz-fz-ATg">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -317,6 +329,9 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <state key="normal" title="Save"/>
+                                            <connections>
+                                                <action selector="Save_Tapped:" destination="iXS-Nq-UDa" eventType="touchUpInside" id="Ixf-1f-CSw"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -392,6 +407,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="6My-9L-qbq"/>
         <segue reference="GlE-l0-WPi"/>
     </inferredMetricsTieBreakers>
     <resources>

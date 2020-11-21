@@ -1,0 +1,6 @@
+G1,McGill,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
+G2,Concordia,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
+G3,ETS,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
+G4,UOT,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
+G5,Alberta,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
+

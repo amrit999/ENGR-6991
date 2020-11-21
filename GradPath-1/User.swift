@@ -13,5 +13,6 @@ class User:Object {
     @objc dynamic var password : String?
     @objc dynamic var confirm_password : String?
     
+    
 }
 

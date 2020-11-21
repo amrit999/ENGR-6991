@@ -15,6 +15,7 @@
 		AF016D50253D03F100A126E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF016D4F253D03F100A126E4 /* Assets.xcassets */; };
 		AF016D53253D03F100A126E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF016D51253D03F100A126E4 /* LaunchScreen.storyboard */; };
 		AF0F71182560716600DDDD4A /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0F71172560716600DDDD4A /* LevelViewController.swift */; };
+		AF1D82972568CCB7007AAEB6 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF1D82962568CCB7007AAEB6 /* data.txt */; };
 		AF48CFF0254D306800544EF8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48CFEF254D306800544EF8 /* LoginViewController.swift */; };
 		AF48CFF4254D322F00544EF8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48CFF3254D322F00544EF8 /* SignupViewController.swift */; };
 		AF48CFF8254D357C00544EF8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48CFF7254D357C00544EF8 /* User.swift */; };
@@ -46,6 +47,7 @@
 		AF016D52253D03F100A126E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF016D54253D03F100A126E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF0F71172560716600DDDD4A /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+		AF1D82962568CCB7007AAEB6 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		AF48CFEF254D306800544EF8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AF48CFF3254D322F00544EF8 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		AF48CFF7254D357C00544EF8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				AF48CFF7254D357C00544EF8 /* User.swift */,
 				AFD056B12564920200AF4058 /* CourseList.swift */,
 				AF5241CF2563AB1900D65CA6 /* CourseTableViewCell.swift */,
+				AF1D82962568CCB7007AAEB6 /* data.txt */,
 			);
 			path = "GradPath-1";
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1D82972568CCB7007AAEB6 /* data.txt in Resources */,
 				AF016D53253D03F100A126E4 /* LaunchScreen.storyboard in Resources */,
 				AF016D50253D03F100A126E4 /* Assets.xcassets in Resources */,
 				AF016D4E253D03EE00A126E4 /* Main.storyboard in Resources */,
