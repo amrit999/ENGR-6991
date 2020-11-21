@@ -20,8 +20,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login_confirm(_ sender: Any) {
-      let realm = try! Realm()
-        
+        let realm = try! Realm()
         // check if user exists
         // check if password is correct
         let login = realm.objects(User.self).filter("email == %@ AND password == %@",login_email.text, login_password.text)

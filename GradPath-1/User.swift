@@ -12,7 +12,8 @@ class User:Object {
     @objc dynamic var email : String?
     @objc dynamic var password : String?
     @objc dynamic var confirm_password : String?
-    
+    let university = List<String>()
+    let course = List<String>()
     
 }
 

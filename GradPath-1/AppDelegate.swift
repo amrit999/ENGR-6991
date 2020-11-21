@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //define realm migration configurations
         
         let config = Realm.Configuration(
-            schemaVersion: 2,
+            schemaVersion: 5,
             migrationBlock: { migration, oldSchemaVersion in
                 if (oldSchemaVersion < 2) {
                     migration.renameProperty(onType: User.className(), from: "name", to: "email")
@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Realm.Configuration.defaultConfiguration = config
         
         return true
+        
+        
     }
 
     // MARK: UISceneSession Lifecycle

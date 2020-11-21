@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 var myArray = [[String]]()
 class CourseTableViewController: UITableViewController {
@@ -33,7 +34,7 @@ class CourseTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return 6
     }
 
     

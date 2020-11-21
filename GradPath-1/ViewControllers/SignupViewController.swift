@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
- 
+var myuser = User()
 
 class SignupViewController: UIViewController, UITextFieldDelegate {
 
@@ -22,9 +22,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func signup_confirm(_ sender: Any) {
-    
         let realm = try! Realm()
-
         // Get our Realm file's parent directory
         let folderPath = realm.configuration.fileURL!.deletingLastPathComponent().path
 
@@ -35,7 +33,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     
         
         // SIGNUP ACTION
-        var myuser = User()
+        //var myuser = User()
         myuser.email = signup_email.text
         myuser.password = signup_password.text
         myuser.confirm_password = signup_confirm_password.text

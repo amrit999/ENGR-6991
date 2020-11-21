@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class CourseTableViewCell: UITableViewCell {
 
@@ -24,6 +25,16 @@ class CourseTableViewCell: UITableViewCell {
     }
 
     @IBAction func Save_Tapped(_ sender: Any) {
+        print(course_name.text)
+        let realm = try! Realm()
+        try! realm.write {
+            for myuser in realm.objects(User.self).filter("email == %@ ",myuser.email) {
+                myuser.university.append(university_name.text!)
+                myuser.course.append(course_name.text!)
+            }
+        }
+        
     }
-    
 }
+    
+
