@@ -11,7 +11,8 @@ import RealmSwift
 var myArray = [[String]]()
 class CourseTableViewController: UITableViewController {
     //MARK: Properties
-     
+    //@IBOutlet weak var saveButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let path = Bundle.main.path(forResource: "data", ofType: "txt")

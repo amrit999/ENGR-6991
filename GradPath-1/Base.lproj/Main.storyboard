@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,10 @@
                             <constraint firstItem="QWC-E8-doo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="neU-1g-6yh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="fd1-T1-LhU" id="Tyn-L0-V0f"/>
+                        <outlet property="signupButton" destination="qIf-mT-zD6" id="QaN-JE-PA0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,11 +146,11 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y4-pv-eKd">
                                                 <rect key="frame" x="0.0" y="0.0" width="247" height="38"/>
-                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
                                                 <inset key="contentEdgeInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Graduate">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" systemColor="systemPurpleColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="graduate_tapped:" destination="B36-9X-Csc" eventType="touchUpInside" id="eKK-Fi-bwq"/>
@@ -155,11 +159,11 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8C-XC-hYh">
                                                 <rect key="frame" x="0.0" y="68" width="247" height="38"/>
-                                                <color key="backgroundColor" red="0.49443228820000001" green="0.44917908109999999" blue="0.80976764899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
                                                 <inset key="contentEdgeInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title=" Under-Graduate ">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" systemColor="systemPurpleColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="undergrad_tapped:" destination="B36-9X-Csc" eventType="touchUpInside" id="B6q-QJ-67D"/>
@@ -178,6 +182,9 @@
                             <constraint firstItem="5qX-Ay-dfd" firstAttribute="centerX" secondItem="yfH-nR-h4T" secondAttribute="centerX" id="BAK-Ve-EIh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="graduateButton" destination="2y4-pv-eKd" id="HZf-NN-xCn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svN-8O-Vst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,6 +293,9 @@
                             <constraint firstItem="D8p-kV-u7e" firstAttribute="centerY" secondItem="V2p-jQ-jAt" secondAttribute="centerY" id="vRP-tk-47h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="softwareButton" destination="xAR-FY-uou" id="7H4-sb-K9e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qaB-VG-Qkx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,7 +304,7 @@
         <!--Course Table View Controller-->
         <scene sceneID="D7B-Yh-KuY">
             <objects>
-                <tableViewController id="Tr2-8O-6jJ" customClass="CourseTableViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Course_vc" id="Tr2-8O-6jJ" customClass="CourseTableViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hI9-XL-x70">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,9 +339,6 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <state key="normal" title="Save"/>
-                                            <connections>
-                                                <action selector="Save_Tapped:" destination="iXS-Nq-UDa" eventType="touchUpInside" id="Ixf-1f-CSw"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>

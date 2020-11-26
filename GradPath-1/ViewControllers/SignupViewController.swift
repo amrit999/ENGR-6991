@@ -58,6 +58,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
             }
         }
         else {
+            
             signup_email.text = ""
             signup_password.text = ""
             signup_confirm_password.text = ""

@@ -10,6 +10,7 @@ import UIKit
 var user_input:String = ""
 class LevelViewController: UIViewController {
 
+    @IBOutlet weak var graduateButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 

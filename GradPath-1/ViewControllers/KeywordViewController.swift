@@ -10,6 +10,7 @@ import Foundation
 var level_input: Int = 0
 class KeywordViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var softwareButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
