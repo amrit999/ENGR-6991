@@ -3,7 +3,7 @@
 //  GradPath-1
 //
 //  Created by Amrit Kalsi on 2020-11-17.
-//
+//  Class to define course list
 
 import UIKit
 

@@ -25,8 +25,10 @@ class LoginViewController: UIViewController {
         // check if password is correct
         let login = realm.objects(User.self).filter("email == %@ AND password == %@",login_email.text, login_password.text)
         if (login.isEmpty ){
-            print("nill nill")
+           print("nill nill")
+            
         }
+            
         else{
             print("not nill")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

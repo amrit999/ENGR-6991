@@ -4,9 +4,12 @@
 //
 //  Created by Amrit Kalsi on 2020-11-14.
 //
+// view to choose level graduate or undergraduate
+
 
 import UIKit
 
+// user input to map to recommendation
 var user_input:String = ""
 class LevelViewController: UIViewController {
 

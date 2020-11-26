@@ -3,7 +3,7 @@
 //  GradPath-1
 //
 //  Created by Amrit Kalsi on 2020-11-17.
-//
+//  Configuring course cells for table view
 
 import UIKit
 import RealmSwift
@@ -24,6 +24,7 @@ class CourseTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+//    save recommendation to db when save is tapped.
     @IBAction func Save_Tapped(_ sender: Any) {
         print(course_name.text)
         let realm = try! Realm()

@@ -3,10 +3,14 @@
 //  GradPath-1
 //
 //  Created by Amrit Kalsi on 2020-11-02.
+
 //  View to define keyword choosing
 
 import UIKit
 import Foundation
+
+// level input to map to recommendation
+
 var level_input: Int = 0
 class KeywordViewController: UIViewController, UITextFieldDelegate {
 

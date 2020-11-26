@@ -3,7 +3,7 @@
 //  GradPath-1
 //
 //  Created by Amrit Kalsi on 2020-11-17.
-//
+// view to define course recommendations cells
 
 import UIKit
 import RealmSwift
@@ -17,6 +17,9 @@ class CourseTableViewController: UITableViewController {
         super.viewDidLoad()
         let path = Bundle.main.path(forResource: "data", ofType: "txt")
         let url = URL(fileURLWithPath: path!)
+        
+//      reading the data file
+        
         let contentString = try! NSString(contentsOf: url, encoding: String.Encoding.utf8.rawValue)
         var csvRows: [String] = contentString.components(separatedBy: "\n")
 
