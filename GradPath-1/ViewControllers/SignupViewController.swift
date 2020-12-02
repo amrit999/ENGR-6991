@@ -54,7 +54,6 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                     if signup_password.text == signup_confirm_password.text {
                        
                         do {
-    
 //  adds hashing for password protection
                             
                             let hashed = try BCrypt.Hash(pass, salt: salt)

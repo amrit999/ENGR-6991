@@ -4,6 +4,7 @@
 //
 //  Created by Amrit Kalsi on 2020-11-29.
 //
+// Configure tabel view cell for saved course list
 
 import UIKit
 import RealmSwift
@@ -29,7 +30,6 @@ class SavedCourseTableViewCell: UITableViewCell {
         try! realm.write {
             for myuser in realm.objects(User.self).filter("email == %@ ",user_session) {
                 let indexToDelete_course = myuser.university.index(of: saved_university_name.text!)
-//                print(delete_course)
                 myuser.university.remove(at: indexToDelete_course!)
             }
         }

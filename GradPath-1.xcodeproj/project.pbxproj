@@ -27,7 +27,6 @@
 		AF6957DD257440D000979C26 /* SavedCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6957DC257440D000979C26 /* SavedCourseTableViewCell.swift */; };
 		AFC12B3725737B2E00126E0B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC12B3625737B2E00126E0B /* DashboardViewController.swift */; };
 		AFC66866256F5BBB00F3A622 /* GradPath_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC66865256F5BBB00F3A622 /* GradPath_1UITests.swift */; };
-		AFD056B22564920200AF4058 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD056B12564920200AF4058 /* CourseList.swift */; };
 		AFD056B625649D9300AF4058 /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD056B525649D9300AF4058 /* CourseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,6 @@
 		AFC66863256F5BBB00F3A622 /* GradPath-1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GradPath-1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC66865256F5BBB00F3A622 /* GradPath_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradPath_1UITests.swift; sourceTree = "<group>"; };
 		AFC66867256F5BBB00F3A622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFD056B12564920200AF4058 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		AFD056B525649D9300AF4058 /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
 		CAC8FFC1CE2B18EEA4522045 /* Pods-GradPath-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradPath-1.release.xcconfig"; path = "Target Support Files/Pods-GradPath-1/Pods-GradPath-1.release.xcconfig"; sourceTree = "<group>"; };
 		D67175C6031C878E4B6DD5AE /* Pods-GradPath-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradPath-1.debug.xcconfig"; path = "Target Support Files/Pods-GradPath-1/Pods-GradPath-1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				AF016D51253D03F100A126E4 /* LaunchScreen.storyboard */,
 				AF016D54253D03F100A126E4 /* Info.plist */,
 				AF48CFF7254D357C00544EF8 /* User.swift */,
-				AFD056B12564920200AF4058 /* CourseList.swift */,
 				AF5241CF2563AB1900D65CA6 /* CourseTableViewCell.swift */,
 				AF1D82962568CCB7007AAEB6 /* data.txt */,
 				AF6957DC257440D000979C26 /* SavedCourseTableViewCell.swift */,
@@ -385,7 +382,6 @@
 				AF5241D02563AB1900D65CA6 /* CourseTableViewCell.swift in Sources */,
 				AF6957D825743CC400979C26 /* SavedCourseTableViewController.swift in Sources */,
 				AFC12B3725737B2E00126E0B /* DashboardViewController.swift in Sources */,
-				AFD056B22564920200AF4058 /* CourseList.swift in Sources */,
 				AF016D47253D03EE00A126E4 /* AppDelegate.swift in Sources */,
 				AF016D49253D03EE00A126E4 /* SceneDelegate.swift in Sources */,
 				AF48CFF8254D357C00544EF8 /* User.swift in Sources */,

@@ -24,7 +24,7 @@ class CourseTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-//    save recommendation to db when save is tapped.
+//Save recommendation to db when save is tapped.
     @IBAction func Save_Tapped(_ sender: Any) {
         print(course_name.text)
         let realm = try! Realm()

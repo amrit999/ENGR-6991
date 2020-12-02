@@ -133,33 +133,39 @@
                                 <rect key="frame" x="120.5" y="232" width="173.5" height="344.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPa-uq-U6i">
-                                        <rect key="frame" x="52.5" y="0.0" width="121" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="173.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter old password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRS-xU-g6g">
-                                        <rect key="frame" x="22" y="94.5" width="151.5" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter old password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRS-xU-g6g">
+                                        <rect key="frame" x="0.0" y="94.5" width="173.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="old_password:" destination="qWk-gf-S3I" eventType="editingDidEnd" id="og3-02-P2T"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gms-xy-cT1">
-                                        <rect key="frame" x="15.5" y="202.5" width="158" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter new password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gms-xy-cT1">
+                                        <rect key="frame" x="0.0" y="202.5" width="173.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3Y-Os-w0i">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm new password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3Y-Os-w0i">
                                         <rect key="frame" x="0.0" y="310.5" width="173.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="UPa-uq-U6i" firstAttribute="centerX" secondItem="28C-8K-ojp" secondAttribute="centerX" id="63o-Ra-2KP"/>
+                                    <constraint firstItem="GRS-xU-g6g" firstAttribute="centerX" secondItem="28C-8K-ojp" secondAttribute="centerX" id="H8G-wS-P4X"/>
+                                    <constraint firstItem="Gms-xy-cT1" firstAttribute="centerX" secondItem="28C-8K-ojp" secondAttribute="centerX" id="fo1-fB-Naq"/>
+                                    <constraint firstItem="j3Y-Os-w0i" firstAttribute="centerX" secondItem="28C-8K-ojp" secondAttribute="centerX" id="gkz-oH-Jzd"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLj-xb-4DV">
-                                <rect key="frame" x="147" y="596" width="121" height="30"/>
+                                <rect key="frame" x="147" y="652" width="121" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update Password"/>
                                 <connections>
