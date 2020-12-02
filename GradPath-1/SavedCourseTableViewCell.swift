@@ -1,18 +1,18 @@
 //
-//  CourseTableViewCell.swift
+//  SavedCourseTableViewCell.swift
 //  GradPath-1
 //
-//  Created by Amrit Kalsi on 2020-11-17.
-//  Configuring course cells for table view
+//  Created by Amrit Kalsi on 2020-11-29.
+//
 
 import UIKit
 import RealmSwift
 
-class CourseTableViewCell: UITableViewCell {
+class SavedCourseTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var university_name: UILabel!
-    @IBOutlet weak var course_name: UILabel!
+    @IBOutlet weak var saved_university_name: UILabel!
     
+    @IBOutlet weak var saved_course_name: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,18 +24,15 @@ class CourseTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-//    save recommendation to db when save is tapped.
-    @IBAction func Save_Tapped(_ sender: Any) {
-        print(course_name.text)
+    @IBAction func delete_tapped(_ sender: Any) {
         let realm = try! Realm()
         try! realm.write {
             for myuser in realm.objects(User.self).filter("email == %@ ",user_session) {
-                myuser.university.append(university_name.text!)
-                myuser.course.append(course_name.text!)
+                let indexToDelete_course = myuser.university.index(of: saved_university_name.text!)
+//                print(delete_course)
+                myuser.university.remove(at: indexToDelete_course!)
             }
         }
         
     }
 }
-    
-
