@@ -37,6 +37,7 @@ class MyProfileViewController: UIViewController {
                     try! realm.write{
                         myuser.password = hashed
                     }
+                    exit(0)
                 }
                 catch {
                     print("An error occured: \(error)")

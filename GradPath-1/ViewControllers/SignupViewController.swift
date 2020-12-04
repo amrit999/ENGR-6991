@@ -67,6 +67,9 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                         try! realm.write{
                             realm.add(myuser)
                         }
+                        signup_email.text = ""
+                        signup_password.text = ""
+                        signup_confirm_password.text = ""
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let secondVC = storyboard.instantiateViewController(identifier: "Login_vc")
                         show(secondVC, sender: self)

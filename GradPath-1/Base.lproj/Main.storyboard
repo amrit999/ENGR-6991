@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vc" id="BYZ-38-t0r" customClass="ViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,7 +195,7 @@
         <!--Dashboard-->
         <scene sceneID="eem-3O-bWa">
             <objects>
-                <viewController id="Jlg-iw-NRo" sceneMemberID="viewController">
+                <viewController id="Jlg-iw-NRo" customClass="DashboardViewController" customModule="GradPath_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RMF-7j-eQk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,8 +208,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="My Profile"/>
                                         <connections>
+                                            <action selector="My_Profile_tapped:" destination="Jlg-iw-NRo" eventType="touchUpInside" id="h67-dg-N4p"/>
                                             <action selector="My_Profile_tapped:" destination="Zu2-2G-UZS" eventType="touchUpInside" id="ueC-di-Lm9"/>
-                                            <segue destination="C6X-9H-FV2" kind="show" id="VWa-aw-CAE"/>
+                                            <segue destination="C6X-9H-FV2" kind="show" id="Men-8I-ctU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgi-M6-li7">
@@ -217,6 +218,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Saved Courses"/>
                                         <connections>
+                                            <action selector="Saved_Courses_Tapped:" destination="Jlg-iw-NRo" eventType="touchUpInside" id="MDt-yw-aRf"/>
                                             <action selector="Saved_Courses_Tapped:" destination="Zu2-2G-UZS" eventType="touchUpInside" id="ymR-Fj-2zr"/>
                                             <segue destination="MNT-k0-Ftf" kind="show" id="OcY-MV-wel"/>
                                         </connections>
@@ -226,7 +228,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Logout"/>
                                         <connections>
-                                            <action selector="Logout_tapped:" destination="Zu2-2G-UZS" eventType="touchUpInside" id="KSn-w7-SKD"/>
+                                            <action selector="LogoutTpped:" destination="Zu2-2G-UZS" eventType="touchUpInside" id="1rD-Hi-XEW"/>
+                                            <action selector="Logout_tapped:" destination="Jlg-iw-NRo" eventType="touchUpInside" id="2ZU-kE-7c8"/>
+                                            <action selector="Logout_tapped:" destination="Zu2-2G-UZS" eventType="touchUpInside" id="50c-IW-uFH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -365,7 +369,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Level" id="qNF-L2-QlM">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="lku-Vs-vPS"/>
                         <barButtonItem key="rightBarButtonItem" title="My Home" id="U15-pg-SeB">
                             <connections>
                                 <segue destination="Jlg-iw-NRo" kind="show" id="h2d-iI-3xN"/>
@@ -507,13 +510,13 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LhP-nV-BC8" customClass="CourseList" customModule="GradPath_1" customModuleProvider="target">
                                             <rect key="frame" x="35" y="11" width="240.5" height="64.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concordia University " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb0-Pc-ruj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concordia University " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb0-Pc-ruj">
                                                     <rect key="frame" x="0.0" y="0.0" width="240.5" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M.Eng - Software Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lne-dI-aJR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M.Eng - Software Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lne-dI-aJR">
                                                     <rect key="frame" x="0.0" y="43" width="240.5" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
                                                     <color key="textColor" systemColor="systemPurpleColor"/>
@@ -543,7 +546,13 @@
                             <outlet property="delegate" destination="Tr2-8O-6jJ" id="9pQ-jW-A1A"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FnQ-08-gy6"/>
+                    <navigationItem key="navigationItem" id="FnQ-08-gy6">
+                        <barButtonItem key="rightBarButtonItem" title="Online Recommendation" id="0Jd-Tm-RHR" userLabel="Online Recommendation">
+                            <connections>
+                                <action selector="online_recommendation_tapped:" destination="Tr2-8O-6jJ" id="Rej-L3-3Jy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mvD-75-ELf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -625,7 +634,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="sdd-eE-6Ns"/>
         <segue reference="nD2-Wf-KVB"/>
-        <segue reference="h2d-iI-3xN"/>
+        <segue reference="qcO-J9-FKH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

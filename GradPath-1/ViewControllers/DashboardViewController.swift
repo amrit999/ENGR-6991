@@ -23,6 +23,16 @@ class DashboardViewController: UIViewController {
     }
     
     @IBAction func Logout_tapped(_ sender: Any) {
+        user_session = ""
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let VC = storyboard.instantiateViewController(identifier: "vc")
+            let navigationController = UINavigationController(rootViewController: VC)
+                show(navigationController, sender: self)
+            exit(0)
+            
     }
+    
+        
+    
     
 }

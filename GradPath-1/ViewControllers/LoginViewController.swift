@@ -43,7 +43,9 @@ class LoginViewController: UIViewController {
             else{
                 print("not nill")
                 user_session = login_email.text!
-
+                login_email.text = ""
+                login_password.text = ""
+            
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let thirdVC = storyboard.instantiateViewController(identifier: "Level_vc")
                         let navigationController = UINavigationController(rootViewController: thirdVC)

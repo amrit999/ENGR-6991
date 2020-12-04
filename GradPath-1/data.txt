@@ -1,6 +1,15 @@
 G1,McGill,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
 G2,Concordia,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
 G3,ETS,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
-G4,UOT,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
-G5,Alberta,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
-G6,Online Course,"Udemy - Online Course","Udemy - Online Course","Udemy - Online Course","Udemy - Online Course","Udemy - Online Course"
+G4,UoOttawa,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
+G5,McMaster,M.Eng - Computer Engineering,M.Eng - Civil Engineering,M.Eng - Electrical Engineering,M.Eng - Software Engineering,M.Eng - Environmental Engineering
+G6,For Online Course,click on - Online recommendation,click on - Online recommendation,click on - Online recommendation,click on - Online recommendation,click on - Online recommendation
+UG1,McGill,B.Eng - Computer Engineering,B.Eng - Civil Engineering,B.Eng - Electrical Engineering,B.Eng - Software Engineering,B.Eng - Environmental Engineering
+UG2,Concordia,B.Eng - Computer Engineering,B.Eng - Civil Engineering,B.Eng - Electrical Engineering,B.Eng - Software Engineering,B.Eng - Environmental Engineering
+UG3,ETS,B.Eng - Computer Engineering,B.Eng - Civil Engineering,B.Eng - Electrical Engineering,B.Eng - Software Engineering,B.Eng - Environmental Engineering
+UG4,UoOttawa,B.Eng - Computer Engineering,B.Eng - Civil Engineering,B.Eng - Electrical Engineering,B.Eng - Software Engineering,B.Eng - Environmental Engineering
+UG5,McMaster,B.Eng - Computer Engineering,B.Eng - Civil Engineering,B.Eng - Electrical Engineering,B.Eng - Software Engineering,B.Eng - Environmental Engineering
+UG6,For Online Course,click on - Online recommendation,click on - Online recommendation,click on - Online recommendation,click on - Online recommendation,click on - Online recommendation
+
+Online Course,Udemy - "https://www.udemy.com/course/beginners-guide-to-information-technology/",Udemy - "https://www.udemy.com/course/civil-engineering-interview-questions/",Udemy - "https://www.udemy.com/course/fundamentals-of-power-system-for-electrical-engineering-2/",Udemy - "https://www.udemy.com/course/the-complete-software-engineering-course-for-beginners/",Udemy - "https://www.udemy.com/course/rahsoft-introduction-to-environmental-chemistry-online-course-rahch320"
+

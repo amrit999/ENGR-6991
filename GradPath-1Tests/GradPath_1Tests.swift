@@ -20,7 +20,7 @@ class GradPath_1Tests: XCTestCase {
     }
     override func setUp() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        sut = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
+        sut = storyboard.instantiateViewController(withIdentifier: "vc") as? ViewController
         sut.loadViewIfNeeded()
         a = storyboard.instantiateViewController(withIdentifier: "Level_vc") as? LevelViewController
         a.loadViewIfNeeded()

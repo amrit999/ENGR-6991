@@ -29,8 +29,10 @@ class SavedCourseTableViewCell: UITableViewCell {
         let realm = try! Realm()
         try! realm.write {
             for myuser in realm.objects(User.self).filter("email == %@ ",user_session) {
-                let indexToDelete_course = myuser.university.index(of: saved_university_name.text!)
-                myuser.university.remove(at: indexToDelete_course!)
+                let indexToDelete_university = myuser.university.index(of: saved_university_name.text!)
+                myuser.university.remove(at: indexToDelete_university!)
+                let indexToDelete_course = myuser.course.index(of: saved_course_name.text!)
+                myuser.course.remove(at: indexToDelete_course!)
             }
         }
         

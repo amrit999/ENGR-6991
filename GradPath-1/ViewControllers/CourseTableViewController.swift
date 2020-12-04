@@ -29,6 +29,17 @@ class CourseTableViewController: UITableViewController {
         }
     }
 
+
+    @IBAction func online_recommendation_tapped(_ sender: Any) {
+        var Online_course_Dict:[Int:String] = [1:"https://www.udemy.com/course/beginners-guide-to-information-technology/", 2:"https://www.udemy.com/course/civil-engineering-interview-questions/", 3:"https://www.udemy.com/course/fundamentals-of-power-system-for-electrical-engineering-2/",4:"https://www.udemy.com/course/the-complete-software-engineering-course-for-beginners/",5:"https://www.udemy.com/course/rahsoft-introduction-to-environmental-chemistry-online-course-rahch320/"]
+        
+        var online_course = Online_course_Dict[level_input]
+
+        if let link = URL(string: online_course!) {
+          UIApplication.shared.open(link)
+        }
+    }
+    
 // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -53,11 +64,20 @@ class CourseTableViewController: UITableViewController {
            }
            
 // Fetches the appropriate course for the data source layout.
-        let out = myArray[indexPath.row]
+        if user_input == "G"{
+            let out = myArray[indexPath.row]
+            
+            cell.university_name.text = out[1]
+            cell.course_name.text = out[level_input+1]
         
-        cell.university_name.text = out[1]
-        cell.course_name.text = out[level_input+1]
-    
+        }
+        if user_input == "UG"{
+            let out = myArray[indexPath.row+6]
+            
+            cell.university_name.text = out[1]
+            cell.course_name.text = out[level_input+1]
+        
+        }
         return cell
     }
     
